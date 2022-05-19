@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel dan Form Tugas 2</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  
+    <div class="w-75 mx-auto ">
+        <h1 class="text-center">Faktur Penjualan</h1>
+    <table class="table table-warning table-bordered">
+        <tr>
+            <th colspan="3">No.#123456789</th>
+            <th >01 Januari 2022</th>
+        </tr>
+        <tr>
+            <td colspan="2"> Di Bayarkan ke : <br>
+                PT.Untung Terus <br>
+                Jalan Beruang No.8 <br>
+                Bandung , Jawa Barat 401111
+            </td>
+            <td colspan="2">
+                Customer : <br>
+                Asep Sumasep <br>
+                Jalan Terus No.1 <br>
+                Bandung , Jawa Barat 402222 <br>
+            </td>
+        </tr>
+            <tr>
+                <th>Barang / Deskripsi</th>
+                <th>Qty.</th>
+                <th>@</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>Buku</td>
+                <td>2</td>
+                <td>5.000</td>
+                <td id="kanan">10.000</td>
+            </tr>
+            <tr>
+                <td>Pulpen</td>
+                <td>3</td>
+                <td>1.000</td>
+                <td id="kanan">3.000</td>
+            </tr>
+            <tr>
+                <th colspan="2">Subtotal</th>
+                <td colspan="2" id="kanan">13.000</td>
+            </tr>
+            <tr>
+                <th>PPN</th>
+                <td>11%</td>
+                <td colspan="2" id="kanan" >1,430</td>
+            </tr>
+            <tr>
+                <th colspan="2">Total</th>
+                <td colspan="2" id="kanan">14.430</td>
+            </tr>
+    </table>
+    </div>
+
+    <div class="w-75 mx-auto mb-3">
+        <h1 class="text-center">Form</h1>
+        <form action="kirim.php" method="get">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Anda..." required>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" name="pesan" id="pesan" rows="3" required></textarea>
+              </div>
+              <button type="submit" name="kirim" id="kirim" class="btn btn-warning text-white">Kirim </button>
+        </form>
+    </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
